@@ -1,0 +1,31 @@
+=== BEGIN_HEADER: (do not edit this header!) ===
+
+This file belongs to YOU, the Copilot agent. You are to keep a detailed, granular, append-only record of each iterative unit of work you do that results in any edits to source code files. Use the following template to append entries to the log:
+
+--- START_TEMPLATE ---
+ITERATION <incremental number>:
+- [issue] <very terse statement of a problem you've observed, which this entry addresses>
+- [intent] <very terse statement of what you're going to change in order to address the problem>
+- [outcome] <after you've executed your intent, do not assume a positive outcome - use your tools to assess the outcome of your work and then write a very terse note here, contrasting your intent with the actual resultant state of the code>
+--- END_TEMPLATE ---
+
+- Start each iteration of your work by appending a declaration of the "[issue]" and your "[intent]", but deferring "[outcome]" until you've executed your intent and actually have an outcome to report.
+- After executing your intent, append a terse summary of your assessment of the outcome of your changes. Then append a blank line and repeat the process ad infinitum until the entire task you've been assigned is complete
+
+--- EXAMPLE subiteration A (start of a new iteration) appending first part of a new log entry: ---
+ITERATION 42:
+- [issue] iteration 41 introduced 4 new compiler errors in example-feature.ts
+- [intent] fix first error: "Property '#foo' does not exist on type 'Example<T>'.ts(2339)"
+--- EXAMPLE subiteration B (intent execution post-mortem) appending outcome, then start of next entry: ---
+- [outcome] my fix failed because I changed #foo to #bar, which also doesn't exist
+
+ITERATION 43:
+- [issue] my fix for error 1 of 4 in the current problem list didn't work, problem remains
+- [intent] change #bar back to #foo, declare #foo property, initialize it in the constructor
+--- EXAMPLE subiteration C (intent execution post-mortem) appending outcome, etc.: ---
+- [outcome] error no longer being reported, associated test is now passing
+
+etc.
+
+=== END_HEADER: (append updates to the end of this file) ===
+

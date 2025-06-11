@@ -5,6 +5,8 @@ description: 'Ask the agent to execute a test-driven development workflow'
 
 Your task is to follow a systematic test-driven development approach as per the current editor and/or what the user has indicated and/or attached alongside this request. Before proceeding, please first review [this document](../docs/testing.md) for important guidelines and instructions. Once you've reviewed the document, please step through the following list of instructions with care and precision.
 
+First review the [test-driven development guidelines](../docs/testing.md).
+
 1. Fully familiarise yourself with the functionality that the test suite is designed to test. Follow these steps:
    - (1.1) Make sure you're clear which functionality the test suite is targeting. If this is uncertain or ambiguous and you're unable to figure this out for yourself with a high degree of confidence, ask the user what you want to know, and proceed no further until you have the answers you seek.
    - (1.2) Once you know exactly what functionality the test suite is targeting, carefully read through the functionality's implementation:
@@ -64,3 +66,7 @@ Your task is to follow a systematic test-driven development approach as per the 
    - (5.3) Repeat step 5.3 until all tests are passing.
 
 6. FINAL REVIEW: Do a quick walkthrough of steps 1 through 5 of these instructions and double check that everything you've done is correct, complete, and fully consistent with everything that the instructions outline.
+   - (6.1) Syntax/type error checking:
+     - (6.1.1) Are any problems currently being reported by the language service/type checker? You _should_ have a dedicated tool for retrieving problems - don't try to use the terminal for this purpose.
+     - (6.1.2) If any problems are being reported, fix them and return to step 6.1.1. If there are no problems currently being reported, proceed to 6.2.
+   - (6.2) Rerun the test suite a final time and carefully check each line of the output. If any failures are reported, return to step 5.2 and move forward from there.
