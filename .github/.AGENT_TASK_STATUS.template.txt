@@ -1,0 +1,27 @@
+=== BEGIN_HEADER: (do not edit this header!) ===
+
+This file belongs to YOU, the Copilot agent. Sometimes the work you're doing is complex, with a lot to keep track of. If your current task context is lost somewhere along the way, getting back up to speed can be difficult. To alleviate this problem, edit this file to keep a persistent note of what you're doing at all times. Use the following template as a guide, remembering to keep your notes brief and concise:
+
+--- START_TEMPLATE ---
+# OVERALL STATUS:
+<write a brief, minimalistic summary to quickly jog your memory regarding everything you've done so far - leave blank if there's nothing to report yet>
+
+# WORKING CONTEXT:
+<write a very terse self-reminder of any transient/ephemeral points of immediate contextual relevance that aren't already covered elsewhere - leave blank if nothing comes to mind>
+
+# CURRENT STEP:
+<write some words here to point yourself to the correct step in the instructions you're following; include any necessary points of additional context if you require them>
+--- END_TEMPLATE ---
+
+After each step of your work, edit this file with a record of where you're currently at with the work.
+
+=== END_HEADER: (make your edits below) ===
+
+# OVERALL STATUS:
+none yet.
+
+# WORKING CONTEXT:
+none yet.
+
+# CURRENT STEP:
+starting at the beginning.

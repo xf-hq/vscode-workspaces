@@ -1,9 +1,9 @@
 ---
 mode: 'agent'
-description: 'Ask the agent to work on the tests in the current editor.'
+description: 'Ask the agent to execute a test-driven development workflow'
 ---
 
-Your task focuses on the tests in the current editor. Before proceeding, please review [this document](../docs/testing.md) for important guidelines and instructions. Once you've reviewed the document, please step through the following list of instructions with care and precision:
+Your task is to follow a systematic test-driven development approach as per the current editor and/or what the user has indicated and/or attached alongside this request. Before proceeding, please first review [this document](../docs/testing.md) for important guidelines and instructions. Once you've reviewed the document, please step through the following list of instructions with care and precision.
 
 1. Fully familiarise yourself with the functionality that the test suite is designed to test. Follow these steps:
    - (1.1) Make sure you're clear which functionality the test suite is targeting. If this is uncertain or ambiguous and you're unable to figure this out for yourself with a high degree of confidence, ask the user what you want to know, and proceed no further until you have the answers you seek.
@@ -48,7 +48,7 @@ Your task focuses on the tests in the current editor. Before proceeding, please 
      - (4.1.1) Fully familiarise yourself with their content, logic, structure and coverage, contrasting the existing test suite implementation with what is outlined by the test plan as it now stands following the work you did in step 3.
      - (4.1.2) If there are any inconsistencies with the plan, add temporary comments regarding any additions, changes or deletions that need to be made. For additions, make sure the comments appear at the correct locations in the code where the test implementations will actually appear.
    - (4.2) If you're going to be writing new tests, revising existing tests or making structural changes to the test suite in general:
-     - (4.2.1) First implement a comprehensive set of test _stubs_ as per the test plan. Your goal here is first to focus on making sure the structure and coverage of the test suite is an accurate reflection of the test plan. You can worry about making the tests pass later - right now your focus is on ensuring that the test suite is consistent with the test plan. Each stub you implement should act as a placeholder, resulting in a deliberate test failure when run.
+     - (4.2.1) First implement a comprehensive set of test _stubs_ as per the test plan. Your goal here is first to focus on making sure the structure and coverage of the test suite is an accurate reflection of the test plan. You can worry about making the tests pass later - right now your focus is on ensuring that the test suite is consistent with the test plan. Each stub you implement should act as a placeholder, resulting in a deliberate test failure when run. Example: `expect(true).toBe(false); // This test is not yet implemented`
      - (4.2.2) Think over the work you've done up to this point and double check that the arrangement, composition and coverage of the stubs you've implemented matches the test plan. If there are any compliation problems, fix them. Do a dry run of the test suite, anticipating failures for any test stubs you introduced.
 
 5. IMPLEMENTATION! Only proceed to this step after you've completed and double checked your work on steps 1 through 4.
