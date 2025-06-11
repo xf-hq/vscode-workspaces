@@ -1,0 +1,20 @@
+{
+	"folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../xf-common"
+    },
+    {
+      "path": "../xf-ui"
+    },
+    {
+      "path": "../xf-process"
+    }
+  ],
+  "settings": {
+    "chat.instructionsFilesLocations": { ".github/instructions": true },
+    "github.copilot.chat.testGeneration.instructions": [{ "file": "instructions/testing.instructions.ts" }],
+  }
+}

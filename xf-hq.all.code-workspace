@@ -1,0 +1,20 @@
+{
+	"folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../xf-common"
+    },
+    {
+      "path": "../xf-ui"
+    },
+    {
+      "path": "../xf-omega"
+    },
+    {
+      "path": "../red-dump-json"
+    }
+  ],
+  "settings": {}
+}
